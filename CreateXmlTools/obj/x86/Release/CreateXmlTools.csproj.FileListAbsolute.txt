@@ -1,0 +1,11 @@
+E:\workspace_c#\wj_util\CreateXmlTools\bin\Release\CreateXmlTools.exe.config
+E:\workspace_c#\wj_util\CreateXmlTools\bin\Release\CreateXmlTools.exe
+E:\workspace_c#\wj_util\CreateXmlTools\bin\Release\CreateXmlTools.pdb
+E:\workspace_c#\wj_util\CreateXmlTools\obj\x86\Release\CreateXmlTools.FormMain.resources
+E:\workspace_c#\wj_util\CreateXmlTools\obj\x86\Release\CreateXmlTools.Properties.Resources.resources
+E:\workspace_c#\wj_util\CreateXmlTools\obj\x86\Release\CreateXmlTools.csproj.GenerateResource.Cache
+E:\workspace_c#\wj_util\CreateXmlTools\obj\x86\Release\CreateXmlTools.exe
+E:\workspace_c#\wj_util\CreateXmlTools\obj\x86\Release\CreateXmlTools.pdb
+E:\workspace_c#\wj_util\Release\CreateXmlTools.exe.config
+E:\workspace_c#\wj_util\Release\CreateXmlTools.exe
+E:\workspace_c#\wj_util\Release\CreateXmlTools.pdb

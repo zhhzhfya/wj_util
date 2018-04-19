@@ -1,0 +1,15 @@
+E:\workspace_c#\AutoUpdater\Debug\AutoUpdater.dll
+E:\workspace_c#\AutoUpdater\Debug\AutoUpdater.pdb
+E:\workspace_c#\AutoUpdater\AutoUpdater\obj\Debug\KnightsWarriorAutoupdater.DownloadConfirm.resources
+E:\workspace_c#\AutoUpdater\AutoUpdater\obj\Debug\KnightsWarriorAutoupdater.DownloadProgress.resources
+E:\workspace_c#\AutoUpdater\AutoUpdater\obj\Debug\AutoUpdater.csproj.GenerateResource.Cache
+E:\workspace_c#\AutoUpdater\AutoUpdater\obj\Debug\AutoUpdater.dll
+E:\workspace_c#\AutoUpdater\AutoUpdater\obj\Debug\AutoUpdater.pdb
+E:\workspace_c#\wj_util\Debug\AutoUpdater.dll
+E:\workspace_c#\wj_util\Debug\AutoUpdater.pdb
+E:\workspace_c#\wj_util\AutoUpdater\obj\Debug\KnightsWarriorAutoupdater.DownloadConfirm.resources
+E:\workspace_c#\wj_util\AutoUpdater\obj\Debug\KnightsWarriorAutoupdater.DownloadProgress.resources
+E:\workspace_c#\wj_util\AutoUpdater\obj\Debug\AutoUpdater.csproj.GenerateResource.Cache
+E:\workspace_c#\wj_util\AutoUpdater\obj\Debug\AutoUpdater.dll
+E:\workspace_c#\wj_util\AutoUpdater\obj\Debug\AutoUpdater.pdb
+E:\workspace_c#\wj_util\AutoUpdater\obj\Debug\AutoUpdater.csprojResolveAssemblyReference.cache

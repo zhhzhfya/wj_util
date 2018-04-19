@@ -1,0 +1,14 @@
+E:\workspace_c#\wj_util\wj_service\bin\Release\Install.bat
+E:\workspace_c#\wj_util\wj_service\bin\Release\Uninstall.bat
+E:\workspace_c#\wj_util\wj_service\bin\Release\WjService.exe.config
+E:\workspace_c#\wj_util\wj_service\bin\Release\WjService.exe
+E:\workspace_c#\wj_util\wj_service\bin\Release\WjService.pdb
+E:\workspace_c#\wj_util\wj_service\obj\Release\wj_service.ProjectInstaller.resources
+E:\workspace_c#\wj_util\wj_service\obj\Release\WjService.csproj.GenerateResource.Cache
+E:\workspace_c#\wj_util\wj_service\obj\Release\WjService.exe
+E:\workspace_c#\wj_util\wj_service\obj\Release\WjService.pdb
+E:\workspace_c#\wj_util\Release\Install.bat
+E:\workspace_c#\wj_util\Release\Uninstall.bat
+E:\workspace_c#\wj_util\Release\WjService.exe.config
+E:\workspace_c#\wj_util\Release\WjService.exe
+E:\workspace_c#\wj_util\Release\WjService.pdb

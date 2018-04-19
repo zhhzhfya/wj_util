@@ -1,0 +1,22 @@
+{
+  "text": "wj_net_use",
+  "path": "E:\\workspace_c#\\wj_util\\Release\\",
+  "childs": [
+    {
+      "type": "文本",
+      "text": "code"
+    },
+    {
+      "type": "文本",
+      "text": "user_code"
+    },
+    {
+      "type": "文本",
+      "text": "user_id_card"
+    },
+    {
+      "type": "日期",
+      "text": "begin_time"
+    }
+  ]
+}

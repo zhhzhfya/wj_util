@@ -1,0 +1,16 @@
+E:\workspace_c#\wj_util\KnightsWarrior\bin\Release\AutoUpdater.Config
+E:\workspace_c#\wj_util\KnightsWarrior\bin\Release\KnightsWarrior.exe.config
+E:\workspace_c#\wj_util\KnightsWarrior\bin\Release\KnightsWarrior.exe
+E:\workspace_c#\wj_util\KnightsWarrior\bin\Release\KnightsWarrior.pdb
+E:\workspace_c#\wj_util\KnightsWarrior\bin\Release\AutoUpdater.dll
+E:\workspace_c#\wj_util\KnightsWarrior\bin\Release\AutoUpdater.pdb
+E:\workspace_c#\wj_util\KnightsWarrior\obj\x86\Release\KnightsWarrior.csprojResolveAssemblyReference.cache
+E:\workspace_c#\wj_util\KnightsWarrior\obj\x86\Release\KnightsWarrior.UpdateForm.resources
+E:\workspace_c#\wj_util\KnightsWarrior\obj\x86\Release\KnightsWarrior.Properties.Resources.resources
+E:\workspace_c#\wj_util\KnightsWarrior\obj\x86\Release\KnightsWarrior.csproj.GenerateResource.Cache
+E:\workspace_c#\wj_util\KnightsWarrior\obj\x86\Release\KnightsWarrior.exe
+E:\workspace_c#\wj_util\KnightsWarrior\obj\x86\Release\KnightsWarrior.pdb
+E:\workspace_c#\wj_util\Release\KnightsWarrior.exe.config
+E:\workspace_c#\wj_util\Release\AutoUpdater.Config
+E:\workspace_c#\wj_util\Release\KnightsWarrior.exe
+E:\workspace_c#\wj_util\Release\KnightsWarrior.pdb

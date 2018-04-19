@@ -1,0 +1,10 @@
+E:\workspace_c#\wj_util\Debug\Install.bat
+E:\workspace_c#\wj_util\Debug\Uninstall.bat
+E:\workspace_c#\wj_util\Debug\WjService.exe.config
+E:\workspace_c#\wj_util\Debug\WjService.exe
+E:\workspace_c#\wj_util\Debug\WjService.pdb
+E:\workspace_c#\wj_util\wj_service\obj\Debug\wj_service.ProjectInstaller.resources
+E:\workspace_c#\wj_util\wj_service\obj\Debug\WjService.csproj.GenerateResource.Cache
+E:\workspace_c#\wj_util\wj_service\obj\Debug\WjService.exe
+E:\workspace_c#\wj_util\wj_service\obj\Debug\WjService.pdb
+E:\workspace_c#\wj_util\wj_service\obj\Debug\WjService.csprojResolveAssemblyReference.cache

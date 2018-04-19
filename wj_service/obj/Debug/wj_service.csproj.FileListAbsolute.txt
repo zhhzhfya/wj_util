@@ -1,0 +1,10 @@
+E:\workspace_c#\wj_util\wj_service\bin\Debug\wj_service.exe.config
+E:\workspace_c#\wj_util\wj_service\bin\Debug\wj_service.exe
+E:\workspace_c#\wj_util\wj_service\bin\Debug\wj_service.pdb
+E:\workspace_c#\wj_util\wj_service\obj\Debug\wj_service.ProjectInstaller.resources
+E:\workspace_c#\wj_util\wj_service\obj\Debug\wj_service.csproj.GenerateResource.Cache
+E:\workspace_c#\wj_util\wj_service\obj\Debug\wj_service.exe
+E:\workspace_c#\wj_util\wj_service\obj\Debug\wj_service.pdb
+E:\workspace_c#\wj_util\Debug\wj_service.exe.config
+E:\workspace_c#\wj_util\Debug\wj_service.exe
+E:\workspace_c#\wj_util\Debug\wj_service.pdb

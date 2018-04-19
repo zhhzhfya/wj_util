@@ -1,0 +1,17 @@
+E:\workspace_c#\AutoUpdater\Debug\CreateXmlTools.exe.config
+E:\workspace_c#\AutoUpdater\Debug\CreateXmlTools.exe
+E:\workspace_c#\AutoUpdater\Debug\CreateXmlTools.pdb
+E:\workspace_c#\AutoUpdater\CreateXmlTools\obj\x86\Debug\CreateXmlTools.FormMain.resources
+E:\workspace_c#\AutoUpdater\CreateXmlTools\obj\x86\Debug\CreateXmlTools.Properties.Resources.resources
+E:\workspace_c#\AutoUpdater\CreateXmlTools\obj\x86\Debug\CreateXmlTools.csproj.GenerateResource.Cache
+E:\workspace_c#\AutoUpdater\CreateXmlTools\obj\x86\Debug\CreateXmlTools.exe
+E:\workspace_c#\AutoUpdater\CreateXmlTools\obj\x86\Debug\CreateXmlTools.pdb
+E:\workspace_c#\wj_util\Debug\CreateXmlTools.exe.config
+E:\workspace_c#\wj_util\Debug\CreateXmlTools.exe
+E:\workspace_c#\wj_util\Debug\CreateXmlTools.pdb
+E:\workspace_c#\wj_util\CreateXmlTools\obj\x86\Debug\CreateXmlTools.FormMain.resources
+E:\workspace_c#\wj_util\CreateXmlTools\obj\x86\Debug\CreateXmlTools.Properties.Resources.resources
+E:\workspace_c#\wj_util\CreateXmlTools\obj\x86\Debug\CreateXmlTools.csproj.GenerateResource.Cache
+E:\workspace_c#\wj_util\CreateXmlTools\obj\x86\Debug\CreateXmlTools.exe
+E:\workspace_c#\wj_util\CreateXmlTools\obj\x86\Debug\CreateXmlTools.pdb
+E:\workspace_c#\wj_util\CreateXmlTools\obj\x86\Debug\CreateXmlTools.csprojResolveAssemblyReference.cache

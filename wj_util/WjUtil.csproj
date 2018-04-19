@@ -1,0 +1,616 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9971675B-5F77-4941-9AB9-BCD9384545A6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WjUtil</RootNamespace>
+    <AssemblyName>WjUtil</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <NuGetPackageImportStamp>ba9b6d94</NuGetPackageImportStamp>
+    <PublishUrl>C:\wj_util\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://192.168.4.254/C%253A/wj_util/</InstallUrl>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>68</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8BD585367B6C6F3CA18617B00DAC3F72D78665F2</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>wj_util_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>wj_util.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>resources\icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommonUtil">
+      <HintPath>lib\CommonUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonUtil.Windows">
+      <HintPath>lib\CommonUtil.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ExcelDataReader, Version=3.3.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.3.3.0\lib\net45\ExcelDataReader.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ExcelDataReader.DataSet, Version=3.3.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.DataSet.3.3.0\lib\net45\ExcelDataReader.DataSet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ExcelExporter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SLaks.ExcelExport.1.0.0.0\lib\net35\ExcelExporter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HessianCSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CZD.HessianCSharp.1.0.0\lib\HessianCSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="KafkaNET.Library, Version=1.0.47.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CSharpClient-for-Kafka.1.0.47\lib\net45\KafkaNET.Library.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Redbus, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Redbus.1.0.3\lib\net45\Redbus.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2016.0.0\lib\net35\Renci.SshNet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SourceGrid, Version=4.40.4580.29115, Culture=neutral, PublicKeyToken=df6f5e538749e85d, processorArchitecture=MSIL">
+      <HintPath>..\packages\SourceGrid.4.4.0\lib\net35\SourceGrid.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.108.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.108.0\lib\net45\System.Data.SQLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.108.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.108.0\lib\net45\System.Data.SQLite.EF6.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.108.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.108.0\lib\net45\System.Data.SQLite.Linq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZooKeeperNet, Version=3.4.6.1, Culture=neutral, PublicKeyToken=fefd2c046da35b56, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZooKeeper.Net.3.4.6.2\lib\net40\ZooKeeperNet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="events\EventAdd.cs" />
+    <Compile Include="events\EventBusHelper.cs" />
+    <Compile Include="events\EventDelete.cs" />
+    <Compile Include="events\EventModify.cs" />
+    <Compile Include="events\EventMessage.cs" />
+    <Compile Include="events\ServerChangEvent.cs" />
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormServerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormServerInfo.Designer.cs">
+      <DependentUpon>FormServerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\bit\FormBitCal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\bit\FormBitCal.Designer.cs">
+      <DependentUpon>FormBitCal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FormDwEvt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormDwEvt.Designer.cs">
+      <DependentUpon>FormDwEvt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FormExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormExcel.Designer.cs">
+      <DependentUpon>FormExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FormHoliday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormHoliday.Designer.cs">
+      <DependentUpon>FormHoliday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\simulate\FormFieldNode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\simulate\FormFieldNode.Designer.cs">
+      <DependentUpon>FormFieldNode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\simulate\FormInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\simulate\FormInput.Designer.cs">
+      <DependentUpon>FormInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FormKafka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormKafka.Designer.cs">
+      <DependentUpon>FormKafka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FormKiller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormKiller.Designer.cs">
+      <DependentUpon>FormKiller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FormLearn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormLearn.Designer.cs">
+      <DependentUpon>FormLearn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FormOffice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormOffice.Designer.cs">
+      <DependentUpon>FormOffice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FormService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormService.Designer.cs">
+      <DependentUpon>FormService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\simulate\FormSimulation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\simulate\FormSimulation.Designer.cs">
+      <DependentUpon>FormSimulation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FormSqlQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormSqlQuery.Designer.cs">
+      <DependentUpon>FormSqlQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FormSsh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormSsh.Designer.cs">
+      <DependentUpon>FormSsh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FormSshUploader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormSshUploader.Designer.cs">
+      <DependentUpon>FormSshUploader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FormStringUtils.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormStringUtils.Designer.cs">
+      <DependentUpon>FormStringUtils.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\simulate\FormTemplateNode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\simulate\FormTemplateNode.Designer.cs">
+      <DependentUpon>FormTemplateNode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FormTextMapping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormTextMapping.Designer.cs">
+      <DependentUpon>FormTextMapping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FormZookeeper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormZookeeper.Designer.cs">
+      <DependentUpon>FormZookeeper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmSample53.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hessian\HessianHelper.cs" />
+    <Compile Include="hessian\ISqlService.cs" />
+    <Compile Include="InvokeHelper.cs" />
+    <Compile Include="model\TemplateMgr.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="utils\DateUtil.cs" />
+    <Compile Include="utils\DsoUtils.cs" />
+    <Compile Include="utils\EventUtil.cs" />
+    <Compile Include="utils\FileHelper.cs" />
+    <Compile Include="utils\GridHelper.cs" />
+    <Compile Include="utils\LocalDBBusiness.cs" />
+    <Compile Include="utils\LocalDBSQLiteHelper.cs" />
+    <Compile Include="utils\SQLiteHelperBase.cs" />
+    <Compile Include="utils\TypeHelper.cs" />
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormServerInfo.resx">
+      <DependentUpon>FormServerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\bit\FormBitCal.resx">
+      <DependentUpon>FormBitCal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormDwEvt.resx">
+      <DependentUpon>FormDwEvt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormExcel.resx">
+      <DependentUpon>FormExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormHoliday.resx">
+      <DependentUpon>FormHoliday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\simulate\FormFieldNode.resx">
+      <DependentUpon>FormFieldNode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\simulate\FormInput.resx">
+      <DependentUpon>FormInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormKafka.resx">
+      <DependentUpon>FormKafka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormKiller.resx">
+      <DependentUpon>FormKiller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormLearn.resx">
+      <DependentUpon>FormLearn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormOffice.resx">
+      <DependentUpon>FormOffice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormService.resx">
+      <DependentUpon>FormService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\simulate\FormSimulation.resx">
+      <DependentUpon>FormSimulation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormSqlQuery.resx">
+      <DependentUpon>FormSqlQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormSsh.resx">
+      <DependentUpon>FormSsh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormSshUploader.resx">
+      <DependentUpon>FormSshUploader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormStringUtils.resx">
+      <DependentUpon>FormStringUtils.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\simulate\FormTemplateNode.resx">
+      <DependentUpon>FormTemplateNode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormTextMapping.resx">
+      <DependentUpon>FormTextMapping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormZookeeper.resx">
+      <DependentUpon>FormZookeeper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmSample53.resx">
+      <DependentUpon>frmSample53.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="wj_util_TemporaryKey.pfx" />
+    <None Include="YT.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="resources\application_delete.png" />
+    <Content Include="resources\application_form_magnify.png" />
+    <Content Include="resources\application_xp_terminal.png" />
+    <Content Include="resources\arrow_rotate_clockwise.png" />
+    <Content Include="resources\car.png" />
+    <Content Include="resources\close.png" />
+    <Content Include="resources\icon.ico" />
+    <Content Include="resources\help.png" />
+    <Content Include="resources\map.png" />
+    <None Include="resources\page_excel.png" />
+    <Content Include="resources\script_lightning.png" />
+    <Content Include="resources\server_connect.png" />
+    <Content Include="resources\server_go.png" />
+    <Content Include="resources\wand.png" />
+    <Content Include="resources\warning.ico" />
+    <Content Include="resources\weather_rain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.1 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Visual.C++.12.0.arm">
+      <Visible>False</Visible>
+      <ProductName>Visual C++ 2013 运行库%28ARM%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Visual.C++.12.0.x64">
+      <Visible>False</Visible>
+      <ProductName>Visual C++ 2013 运行库%28x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Visual.C++.12.0.x86">
+      <Visible>False</Visible>
+      <ProductName>Visual C++ 2013 运行库%28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Microsoft.Office.Interop.Excel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Vbe.Interop">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Newtonsoft.Json">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="office">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="x64\librdkafka.dll">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="x64\zlib.dll">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="x86\librdkafka.dll">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="x86\zlib.dll">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxDSOFramer">
+      <Guid>{00460180-9E5E-11D5-B7C8-B8269041DD57}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="DSOFramer">
+      <Guid>{00460180-9E5E-11D5-B7C8-B8269041DD57}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AutoUpdater\AutoUpdater.csproj">
+      <Project>{4ba4719c-c6ab-49ba-9754-848ca24c1fd6}</Project>
+      <Name>AutoUpdater</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.108.0\build\net45\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.108.0\build\net45\System.Data.SQLite.Core.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。启用“NuGet 程序包还原”可下载这些程序包。有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.108.0\build\net45\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.108.0\build\net45\System.Data.SQLite.Core.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
