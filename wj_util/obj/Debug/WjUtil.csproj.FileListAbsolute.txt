@@ -35,3 +35,9 @@ E:\workspace_c#\wj_util\wj_util\obj\Debug\WjUtil.application
 E:\workspace_c#\wj_util\wj_util\obj\Debug\WjUtil.exe
 E:\workspace_c#\wj_util\wj_util\obj\Debug\WjUtil.pdb
 E:\workspace_c#\wj_util\wj_util\obj\Debug\wj_util.FormMain.resources
+E:\workspace_github\wj_util\Debug\WjUtil.exe.config
+E:\workspace_github\wj_util\wj_util\obj\Debug\Interop.DSOFramer.dll
+E:\workspace_github\wj_util\wj_util\obj\Debug\AxInterop.DSOFramer.dll
+E:\workspace_github\wj_util\wj_util\obj\Debug\WjUtil.csproj.ResolveComReference.cache
+E:\workspace_github\wj_util\wj_util\obj\Debug\WjUtil.exe
+E:\workspace_github\wj_util\wj_util\obj\Debug\WjUtil.pdb
