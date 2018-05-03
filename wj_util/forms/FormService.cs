@@ -128,6 +128,13 @@ namespace WjUtil.forms
         {
             FormOffice f = new FormOffice("e:\\b.xlsx");
             f.Show();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Microsoft.Office.Interop.Word.Application app = new Microsoft.Office.Interop.Word.Application();
+            app.Visible = true;
+            app.Documents.Add("D://Test.docx");
         }  
     }
 }

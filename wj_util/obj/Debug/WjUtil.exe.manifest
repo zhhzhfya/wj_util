@@ -283,14 +283,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WjUtil.exe" size="161704">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WjUtil.exe" size="165288">
       <assemblyIdentity name="WjUtil" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>VmWWi9+Q33Am5H3ZQ1rhH28oXS2OvpT7hFAc+Gam1NY=</dsig:DigestValue>
+        <dsig:DigestValue>NIKcELS0W63dt+wqvCgceZqO2YXdhHMobHkMhYARdaI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
