@@ -71,6 +71,7 @@ namespace KnightsWarrior
                 OperProcess op = new OperProcess();
                 //启动进程
                 op.StartProcess();
+                Application.Exit();
             }
             #endregion
         }

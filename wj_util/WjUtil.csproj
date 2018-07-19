@@ -57,10 +57,10 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>8BD585367B6C6F3CA18617B00DAC3F72D78665F2</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>E882D019EA79CACF0920BC372F8B94F6CDEF77F9</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>wj_util_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>WjUtil_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -210,6 +210,12 @@
     <Compile Include="forms\bit\FormBitCal.Designer.cs">
       <DependentUpon>FormBitCal.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\FormD3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormD3.Designer.cs">
+      <DependentUpon>FormD3.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\FormDwEvt.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -332,8 +338,10 @@
     <Compile Include="utils\EventUtil.cs" />
     <Compile Include="utils\FileHelper.cs" />
     <Compile Include="utils\GridHelper.cs" />
+    <Compile Include="utils\HttpHelper.cs" />
     <Compile Include="utils\LocalDBBusiness.cs" />
     <Compile Include="utils\LocalDBSQLiteHelper.cs" />
+    <Compile Include="utils\NetHelper.cs" />
     <Compile Include="utils\SQLiteHelperBase.cs" />
     <Compile Include="utils\TypeHelper.cs" />
     <EmbeddedResource Include="FormMain.resx">
@@ -344,6 +352,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\bit\FormBitCal.resx">
       <DependentUpon>FormBitCal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormD3.resx">
+      <DependentUpon>FormD3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\FormDwEvt.resx">
       <DependentUpon>FormDwEvt.cs</DependentUpon>
@@ -422,6 +433,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="WjUtil_TemporaryKey.pfx" />
     <None Include="wj_util_TemporaryKey.pfx" />
     <None Include="YT.json" />
   </ItemGroup>

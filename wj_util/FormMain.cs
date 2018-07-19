@@ -41,10 +41,11 @@ namespace wj_util
 
         private void FormRuleUtil_Load(object sender, EventArgs e)
         {
+            
             //this.tabControl1.DrawMode = TabDrawMode.OwnerDrawFixed;
             //this.tabControl1.Padding = new System.Drawing.Point(15, 3);
             //this.tabControl1.DrawItem += new DrawItemEventHandler(this.MainTabControl_DrawItem);
-            //this.tabControl1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainTabControl_MouseDown);
+            this.tabControl1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tabControl1_MouseDown);
             addTabForm("WjUtil.forms", "FormExcel", "FormExcel", "Excel");
             addTabForm("WjUtil.forms", "FormBitCal", "FormBitCal", "字符计算");
             addTabForm("WjUtil.forms", "FormSimulation", "FormSimulation", "模拟数据生成器");
@@ -52,7 +53,7 @@ namespace wj_util
             addTabForm("WjUtil.forms", "FormStringUtils", "FormStringUtils", "字符工具");
             addTabForm("WjUtil.forms", "FormService", "FormService", "服务配置");
             //addTabForm("WjUtil.forms", "FormDwEvt", "FormDwEvt", "电围模拟数据");
-
+            addTabForm("WjUtil.forms", "FormD3", "FormD3", "D3");
             this.tabControl1.SelectedIndex = 0;
 
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
@@ -98,74 +99,62 @@ namespace wj_util
             this.ShowInTaskbar = true;
         }
 
-        //绘制“Ｘ”号即关闭按钮   
-        //private void MainTabControl_DrawItem(object sender, DrawItemEventArgs e)
-        //{
-        //    try
-        //    {
-        //        Rectangle myTabRect = this.tabControl1.GetTabRect(e.Index);
+        //绘制“Ｘ”号即关闭按钮  
+        private void MainTabControl_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            try
+            {
+                Rectangle myTabRect = this.tabControl1.GetTabRect(e.Index);
 
-        //        //先添加TabPage属性      
-        //        e.Graphics.DrawString(this.tabControl1.TabPages[e.Index].Text, this.Font, SystemBrushes.ControlText, myTabRect.X + 2, myTabRect.Y + 2);
-        //        //再画一个矩形框   
-        //        using (Pen p = new Pen(Color.White))
-        //        {
-        //            myTabRect.Offset(myTabRect.Width - (CLOSE_SIZE + 3), 2);
-        //            myTabRect.Width = CLOSE_SIZE;
-        //            myTabRect.Height = CLOSE_SIZE;
-        //            e.Graphics.DrawRectangle(p, myTabRect);
-        //        }
+                //先添加TabPage属性     
+                e.Graphics.DrawString(this.tabControl1.TabPages[e.Index].Text, this.Font, SystemBrushes.ControlText, myTabRect.X + 2, myTabRect.Y + 2);
 
-        //        //填充矩形框   
-        //        Color recColor = e.State == DrawItemState.Selected ? Color.White : Color.White;
-        //        using (Brush b = new SolidBrush(recColor))
-        //        {
-        //            e.Graphics.FillRectangle(b, myTabRect);
-        //        }
+                //再画一个矩形框  
+                using (Pen p = new Pen(Color.White))
+                {
+                    myTabRect.Offset(myTabRect.Width - (CLOSE_SIZE + 3), 2);
+                    myTabRect.Width = CLOSE_SIZE;
+                    myTabRect.Height = CLOSE_SIZE;
+                    e.Graphics.DrawRectangle(p, myTabRect);
 
-        //        //画关闭符号   
-        //        using (Pen objpen = new Pen(Color.Black))
-        //        {
-        //            ////=============================================   
-        //            //自己画X   
-        //            ////=============================================   
-        //            //使用图片   
-        //            Bitmap bt = new Bitmap(image);
-        //            Point p5 = new Point(myTabRect.X, 4);
-        //            e.Graphics.DrawImage(bt, p5);
-        //            //e.Graphics.DrawString(this.MainTabControl.TabPages[e.Index].Text, this.Font, objpen.Brush, p5);   
-        //            //Bitmap bt2 = new Bitmap(image);
-        //            //Point p52 = new Point(myTabRect.X + 10, 4);
-        //            //e.Graphics.DrawImage(bt2, p52);
-        //        }
-        //        e.Graphics.Dispose();
-        //    }
-        //    catch (Exception)
-        //    { }
-        //}
+                }
 
-        //关闭按钮功能   
-        //private void MainTabControl_MouseDown(object sender, MouseEventArgs e)
-        //{
-        //    if (e.Button == MouseButtons.Left)
-        //    {
-        //        int x = e.X, y = e.Y;
-        //        //计算关闭区域      
-        //        Rectangle myTabRect = this.tabControl1.GetTabRect(this.tabControl1.SelectedIndex);
+                //填充矩形框  
+                Color recColor = e.State == DrawItemState.Selected ? Color.LightGray : Color.LightGray;
+                using (Brush b = new SolidBrush(recColor))
+                {
+                    //e.Graphics.FillRectangle(b, myTabRect);
+                }
 
-        //        myTabRect.Offset(myTabRect.Width - (CLOSE_SIZE + 3), 2);
-        //        myTabRect.Width = CLOSE_SIZE;
-        //        myTabRect.Height = CLOSE_SIZE;
+                //画关闭符号  
+                using (Pen objpen = new Pen(Color.Black))
+                {
+                    //"\"线  
+                    Point p1 = new Point(myTabRect.X + 3, myTabRect.Y + 3);
+                    Point p2 = new Point(myTabRect.X + myTabRect.Width - 3, myTabRect.Y + myTabRect.Height - 3);
+                    e.Graphics.DrawLine(objpen, p1, p2);
 
-        //        //如果鼠标在区域内就关闭选项卡      
-        //        bool isClose = x > myTabRect.X && x < myTabRect.Right && y > myTabRect.Y && y < myTabRect.Bottom;
-        //        if (isClose == true)
-        //        {
-        //            this.tabControl1.TabPages.Remove(this.tabControl1.SelectedTab);
-        //        }
-        //    }
-        //}
-      
+                    //"/"线  
+                    Point p3 = new Point(myTabRect.X + 3, myTabRect.Y + myTabRect.Height - 3);
+                    Point p4 = new Point(myTabRect.X + myTabRect.Width - 3, myTabRect.Y + 3);
+                    e.Graphics.DrawLine(objpen, p3, p4);
+                }
+
+                e.Graphics.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        //======================================================================= 
+
+        //关闭按钮功能  
+        private void tabControl1_MouseDown(object sender, MouseEventArgs e)
+        {
+
+        }
+
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -330,5 +319,14 @@ namespace wj_util
             addTabForm("WjUtil.forms", "FormExcel", "FormExcel", "Excel");
         }
 
+        private void d3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            addTabForm("WjUtil.forms", "FormD3", "FormD3", "D3");
+        }
+
+        private void tabControl1_DoubleClick(object sender, EventArgs e)
+        {
+            this.tabControl1.TabPages.Remove(this.tabControl1.SelectedTab);
+        }
     }
 }

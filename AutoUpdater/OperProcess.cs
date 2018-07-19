@@ -29,7 +29,7 @@ namespace AutoUpdater
             {
                 StartExe(path, "WjUtil.exe");
             }
-            CloseExe("KnightsWarrior");
+            CloseExe("wjutil_start");
         }
 
         #endregion

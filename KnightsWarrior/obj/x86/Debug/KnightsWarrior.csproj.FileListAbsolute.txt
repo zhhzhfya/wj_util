@@ -18,3 +18,13 @@ E:\workspace_c#\wj_util\KnightsWarrior\obj\x86\Debug\KnightsWarrior.UpdateForm.r
 E:\workspace_c#\wj_util\KnightsWarrior\obj\x86\Debug\KnightsWarrior.Properties.Resources.resources
 E:\workspace_c#\wj_util\KnightsWarrior\obj\x86\Debug\KnightsWarrior.csproj.GenerateResource.Cache
 E:\workspace_c#\wj_util\Debug\AutoUpdater.Config
+E:\workspace_github\wj_util\Debug\AutoUpdater.Config
+E:\workspace_github\wj_util\KnightsWarrior\obj\x86\Debug\KnightsWarrior.csprojResolveAssemblyReference.cache
+E:\workspace_github\wj_util\KnightsWarrior\obj\x86\Debug\KnightsWarrior.UpdateForm.resources
+E:\workspace_github\wj_util\KnightsWarrior\obj\x86\Debug\KnightsWarrior.Properties.Resources.resources
+E:\workspace_github\wj_util\KnightsWarrior\obj\x86\Debug\KnightsWarrior.csproj.GenerateResource.Cache
+E:\workspace_github\wj_util\Debug\wjutil_start.exe.config
+E:\workspace_github\wj_util\Debug\wjutil_start.exe
+E:\workspace_github\wj_util\Debug\wjutil_start.pdb
+E:\workspace_github\wj_util\KnightsWarrior\obj\x86\Debug\wjutil_start.exe
+E:\workspace_github\wj_util\KnightsWarrior\obj\x86\Debug\wjutil_start.pdb

@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AutoUpdater.dll" size="34816">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AutoUpdater.dll" size="33792">
       <assemblyIdentity name="AutoUpdater" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>7M3/G59EExf3u507HwsDI1AzpnQNVuHfCHjOseZ+0jg=</dsig:DigestValue>
+        <dsig:DigestValue>XnvL0AsXU9IP8sCHPri1qafvnPiESe9p4G7Ov+7VZb4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>klL4Ts/6RAqTiWn8xqXItqQUc7JiHlvqn7Z1P4oC4To=</dsig:DigestValue>
+        <dsig:DigestValue>sGXweNcZiQ9+b8/j4OmF70dHBKGpPFjRDundrxmVi5A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -170,7 +170,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>WuGRVFe814ecAZHO1xSY6ngHzHEfT7cmx9kfj3tNT+4=</dsig:DigestValue>
+        <dsig:DigestValue>G1WVYqdBtH5ZdvesGzKmitQI7dP/Crag2e1HPQajmcU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -283,14 +283,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WjUtil.exe" size="165288">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WjUtil.exe" size="178664">
       <assemblyIdentity name="WjUtil" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>NIKcELS0W63dt+wqvCgceZqO2YXdhHMobHkMhYARdaI=</dsig:DigestValue>
+        <dsig:DigestValue>sDAKD7MZhUo/iNFB7MFTxyJRWswzfm3LC6zOeR4omYc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

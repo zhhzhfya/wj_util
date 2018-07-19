@@ -13,7 +13,6 @@ E:\workspace_github\wj_util\Debug\Uninstall.bat
 E:\workspace_github\wj_util\Debug\WjService.exe.config
 E:\workspace_github\wj_util\Debug\WjService.exe
 E:\workspace_github\wj_util\Debug\WjService.pdb
-E:\workspace_github\wj_util\wj_service\obj\Debug\WjService.csprojResolveAssemblyReference.cache
 E:\workspace_github\wj_util\wj_service\obj\Debug\wj_service.ProjectInstaller.resources
 E:\workspace_github\wj_util\wj_service\obj\Debug\WjService.csproj.GenerateResource.Cache
 E:\workspace_github\wj_util\wj_service\obj\Debug\WjService.exe

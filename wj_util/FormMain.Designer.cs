@@ -51,6 +51,8 @@
             this.字节计算ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.电围模拟数据ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.excelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.demoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.d3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel_msg = new System.Windows.Forms.ToolStripStatusLabel();
@@ -68,7 +70,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
-            this.工具TToolStripMenuItem});
+            this.工具TToolStripMenuItem,
+            this.demoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(2, 2, 0, 2);
@@ -245,6 +248,21 @@
             this.excelToolStripMenuItem.Text = "Excel";
             this.excelToolStripMenuItem.Click += new System.EventHandler(this.excelToolStripMenuItem_Click);
             // 
+            // demoToolStripMenuItem
+            // 
+            this.demoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.d3ToolStripMenuItem});
+            this.demoToolStripMenuItem.Name = "demoToolStripMenuItem";
+            this.demoToolStripMenuItem.Size = new System.Drawing.Size(55, 21);
+            this.demoToolStripMenuItem.Text = "Demo";
+            // 
+            // d3ToolStripMenuItem
+            // 
+            this.d3ToolStripMenuItem.Name = "d3ToolStripMenuItem";
+            this.d3ToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
+            this.d3ToolStripMenuItem.Text = "D3";
+            this.d3ToolStripMenuItem.Click += new System.EventHandler(this.d3ToolStripMenuItem_Click);
+            // 
             // tabControl1
             // 
             this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -255,6 +273,7 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(908, 491);
             this.tabControl1.TabIndex = 10;
+            this.tabControl1.DoubleClick += new System.EventHandler(this.tabControl1_DoubleClick);
             // 
             // statusStrip1
             // 
@@ -366,5 +385,7 @@
         private System.Windows.Forms.ToolStripMenuItem 字节计算ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 电围模拟数据ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem excelToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem demoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem d3ToolStripMenuItem;
     }
 }
