@@ -23,3 +23,4 @@ E:\workspace_github\wj_util\CreateXmlTools\obj\x86\Debug\CreateXmlTools.Properti
 E:\workspace_github\wj_util\CreateXmlTools\obj\x86\Debug\CreateXmlTools.csproj.GenerateResource.Cache
 E:\workspace_github\wj_util\CreateXmlTools\obj\x86\Debug\CreateXmlTools.exe
 E:\workspace_github\wj_util\CreateXmlTools\obj\x86\Debug\CreateXmlTools.pdb
+E:\workspace_github\wj_util\CreateXmlTools\obj\x86\Debug\CreateXmlTools.csprojResolveAssemblyReference.cache

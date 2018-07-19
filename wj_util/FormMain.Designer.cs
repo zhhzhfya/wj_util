@@ -253,13 +253,13 @@
             this.demoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.d3ToolStripMenuItem});
             this.demoToolStripMenuItem.Name = "demoToolStripMenuItem";
-            this.demoToolStripMenuItem.Size = new System.Drawing.Size(55, 21);
-            this.demoToolStripMenuItem.Text = "Demo";
+            this.demoToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
+            this.demoToolStripMenuItem.Text = "人工智能";
             // 
             // d3ToolStripMenuItem
             // 
             this.d3ToolStripMenuItem.Name = "d3ToolStripMenuItem";
-            this.d3ToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
+            this.d3ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.d3ToolStripMenuItem.Text = "D3";
             this.d3ToolStripMenuItem.Click += new System.EventHandler(this.d3ToolStripMenuItem_Click);
             // 
