@@ -20,4 +20,3 @@ E:\workspace_github\wj_util\AutoUpdater\obj\Debug\KnightsWarriorAutoupdater.Down
 E:\workspace_github\wj_util\AutoUpdater\obj\Debug\AutoUpdater.csproj.GenerateResource.Cache
 E:\workspace_github\wj_util\AutoUpdater\obj\Debug\AutoUpdater.dll
 E:\workspace_github\wj_util\AutoUpdater\obj\Debug\AutoUpdater.pdb
-E:\workspace_github\wj_util\AutoUpdater\obj\Debug\AutoUpdater.csprojResolveAssemblyReference.cache

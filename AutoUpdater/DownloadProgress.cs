@@ -290,7 +290,7 @@ namespace KnightsWarriorAutoupdater
 
 
             File.Move(newPath, oldPath);
-            //File.Delete(oldPath + ".old");
+            File.Delete(oldPath + ".old");
         }
 
         delegate void ShowCurrentDownloadFileNameCallBack(string name);
@@ -341,8 +341,8 @@ namespace KnightsWarriorAutoupdater
         private void OnCancel(object sender, EventArgs e)
         {
             //bCancel = true;
-            //evtDownload.Set();
-            //evtPerDonwload.Set();
+            evtDownload.Set();
+            evtPerDonwload.Set();
             ShowErrorAndRestartApplication();
         }
 

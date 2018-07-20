@@ -17,4 +17,3 @@ E:\workspace_github\wj_util\wj_service\obj\Debug\wj_service.ProjectInstaller.res
 E:\workspace_github\wj_util\wj_service\obj\Debug\WjService.csproj.GenerateResource.Cache
 E:\workspace_github\wj_util\wj_service\obj\Debug\WjService.exe
 E:\workspace_github\wj_util\wj_service\obj\Debug\WjService.pdb
-E:\workspace_github\wj_util\wj_service\obj\Debug\WjService.csprojResolveAssemblyReference.cache
